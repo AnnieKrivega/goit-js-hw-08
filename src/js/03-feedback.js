@@ -19,6 +19,7 @@ const state = JSON.parse(localStorage.getItem(STORAGE_KEY));
 if (state) {
     emailInput.value = state.email.trim();
     messageInput.value = state.message.trim();
+    return;
 }
 };
 

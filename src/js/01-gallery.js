@@ -28,12 +28,5 @@ captionDelay: 250,
 
 const lightbox = new SimpleLightbox('.gallery a', lightboxOptions);
 
-const openImage = event => {
-event.preventDefault();
-lightbox.open({
-    source: event.target.parentNode.href,
-    caption: event.target.alt,
-});
-};
 
-gallery.addEventListener('click', openImage);
+
